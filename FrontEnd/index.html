@@ -1,0 +1,268 @@
+<!doctype html>
+<html>
+<head>
+  <style>
+.button1 {
+  background-color: black;
+  border: none;
+  color: white;
+  padding: 15px 25px;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: yellow;
+}
+</style>
+
+    <!-- meta tags -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://sdk.amazonaws.com/js/aws-sdk-2.414.0.min.js"></script>
+    <script type="text/javascript" src="js/lib/axios/dist/axios.standalone.js"></script>
+    <script type="text/javascript" src="js/lib/CryptoJS/rollups/hmac-sha256.js"></script>
+    <script type="text/javascript" src="js/lib/CryptoJS/rollups/sha256.js"></script>
+    <script type="text/javascript" src="js/lib/CryptoJS/components/hmac.js"></script>
+    <script type="text/javascript" src="js/lib/CryptoJS/components/enc-base64.js"></script>
+    <script type="text/javascript" src="js/lib/url-template/url-template.js"></script>
+    <script type="text/javascript" src="js/lib/apiGatewayCore/sigV4Client.js"></script>
+    <script type="text/javascript" src="js/lib/apiGatewayCore/apiGatewayClient.js"></script>
+    <script type="text/javascript" src="js/lib/apiGatewayCore/simpleHttpClient.js"></script>
+    <script type="text/javascript" src="js/lib/apiGatewayCore/utils.js"></script>
+    <script type="text/javascript" src="js/apigClient.js"></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/fontawesome-all.css">
+    <link rel="stylesheet" href="css/slick-slider.css">
+    <link rel="stylesheet" href="css/fancybox.css">
+    <link rel="stylesheet" href="css/smartmenus.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/color.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+</head>
+
+<body class="home">
+
+    <div class="ritekhed-wrapper">
+
+        <!-- Header -->
+        <div id="ritekhed-header" class="ritekhed-header-one">
+
+          <!-- Top Strip -->
+          <div class="ritekhed-top-strip ritekhed-bgcolor-two">
+              <div class="container">
+                  <div class="row">
+                      <div class="col-md-12">
+
+                          <ul class="ritekhed-user-section">
+                              <li><i class="fa fa-sign-in-alt"></i> <a href="https://footthreesixtyfive.auth.us-east-1.amazoncognito.com/logout?client_id=6b7unqhjcn1cbr85o1fo6bq69o&logout_uri=https://s3.amazonaws.com/foot365/foot365/signout.html" >Sign Out</a></li>
+                          </ul>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <!-- Top Strip -->
+
+            <!-- Main Header -->
+            <div class="ritekhed-main-header ritekhed-border-color">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+
+                            <div class="ritekhed-right-head">
+                              <span class="ritekhed-menu-link">
+                                  <span class="menu-bar"></span>
+                                  <span class="menu-bar"></span>
+                                  <span class="menu-bar"></span>
+                              </span>
+
+                                <nav id="main-nav">
+                                    <ul id="main-menu" class="sm sm-blue">
+                                      <li class="active"><a href="index.html">Home</a></li>
+                                      <li><a href="fixture.html">Leaderboard and Fixtures</a></li>
+                                      <li><a href="predict.html">foot365 Predictions</a></li>
+                                      <li class="active"><a href="live.html">GET LIVE SCORES @ Foot365!</a></li>
+
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Main Header -->
+        </div>
+        <!-- Header -->
+
+        <!-- Banner -->
+        <div class="ritekhed-banner">
+            <div class="ritekhed-banner-layer">
+                <span class="ritekhed-banner-transparent"></span>
+                <img src="images/foot.jpg" alt="">
+                <div class="ritekhed-banner-caption">
+                    <div class="container">
+                        <h1>We Are Developing The <strong class="ritekhed-color">Football</strong> Be Our Partner <strong class="ritekhed-color"> Foot365</strong></h1>
+                        <div class="clearfix"></div>
+
+                        <div class="clearfix"></div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Banner -->
+
+        <!-- Content -->
+        <div class="ritekhed-main-content">
+
+
+
+          <iframe src="chat.html" width="100%" height="1000">
+            <p>Your browser does not support iframes.</p>
+          </iframe>
+
+          <center><button class="button1" onclick="location.href = 'https://m.uber.com/looking';">Book an uber</button></center>
+
+            <!-- Main Section -->
+            <div class="ritekhed-main-section ritekhed-player-grid-full">
+                <div class="container">
+                    <div class="row">
+
+                        <!-- Team -->
+                        <div class="col-md-12">
+                            <div class="ritekhed-fancy-title"> <h2>Meet Our Team</h2> </div>
+                            <div class="ritekhed-player ritekhed-player-grid">
+                                <ul class="row">
+                                    <li class="col-md-3">
+                                        <figure><a href="#"><img src="extra-images/player-grid-img1.jpg" alt=""><i class="fa fa-link"></i></a><span></span></figure>
+                                        <div class="ritekhed-player-grid-text">
+                                            <a href="#" class="forward-btn">Forward</a>
+                                            <h5><a href="#">Aditya Jain</a></h5>
+
+                                        </div>
+                                        <ul class="ritekhed-player-grid-social">
+                                            <li><a href="https://www.facebook.com/adityajain1095/" class="ritekhed-colorhover fab fa-facebook-square"></a></li>
+
+                                            <li><a href="https://pk.linkedin.com/" class="ritekhed-colorhover fab fa-linkedin"></a></li>
+
+                                        </ul>
+                                    </li>
+                                    <li class="col-md-3">
+                                        <figure><a href="#"><img src="extra-images/player-grid-img2.jpg" alt=""><i class="fa fa-link"></i></a><span></span></figure>
+                                        <div class="ritekhed-player-grid-text">
+                                            <a href="#" class="forward-btn">Mid Fielder</a>
+                                            <h5><a href="#">Amartya Singh</a></h5>
+
+                                        </div>
+                                        <ul class="ritekhed-player-grid-social">
+                                            <li><a href="https://www.facebook.com/" class="ritekhed-colorhover fab fa-facebook-square"></a></li>
+
+                                            <li><a href="https://pk.linkedin.com/" class="ritekhed-colorhover fab fa-linkedin"></a></li>
+
+                                        </ul>
+                                    </li>
+                                    <li class="col-md-3">
+                                        <figure><a href="#"><img src="extra-images/player-grid-img3.jpg" alt=""><i class="fa fa-link"></i></a><span></span></figure>
+                                        <div class="ritekhed-player-grid-text">
+                                            <a href="#" class="forward-btn">Goal Keeper</a>
+                                            <h5><a href="#">Nikhila Dwarakanath</a></h5>
+
+                                        </div>
+                                        <ul class="ritekhed-player-grid-social">
+                                            <li><a href="https://www.facebook.com/" class="ritekhed-colorhover fab fa-facebook-square"></a></li>
+
+                                            <li><a href="https://pk.linkedin.com/" class="ritekhed-colorhover fab fa-linkedin"></a></li>
+
+                                        </ul>
+                                    </li>
+                                    <li class="col-md-3">
+                                        <figure><a href="#"><img src="extra-images/player-grid-img4.jpg" alt=""><i class="fa fa-link"></i></a><span></span></figure>
+                                        <div class="ritekhed-player-grid-text">
+                                            <a href="#" class="forward-btn">Defender</a>
+                                            <h5><a href="#">Pratik Pravin rathi</a></h5>
+
+                                        </div>
+                                        <ul class="ritekhed-player-grid-social">
+                                            <li><a href="https://www.facebook.com/" class="ritekhed-colorhover fab fa-facebook-square"></a></li>
+
+                                            <li><a href="https://in.linkedin.com/" class="ritekhed-colorhover fab fa-linkedin"></a></li>
+
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- Team -->
+
+                    </div>
+                </div>
+            </div>
+            <!-- Main Section -->
+
+
+
+        </div>
+        <!-- Content -->
+
+        <!-- Footer -->
+        <footer id="ritekhed-footer" class="ritekhed-footer-one">
+            <!-- Footer Widget -->
+            <div class="ritekhed-footer-widget">
+                <div class="container">
+                    <div class="row">
+                        <!-- Widget Footer About -->
+                        <aside class="widget col-md-4 widget_footer_about">
+                            <ul class="ritekhed-social-network">
+                                <li><a href="https://www.facebook.com/appfoot365/" class="ritekhed-colorhover fab fa-facebook"></a></li>
+                            </ul>
+                            <ul class="ritekhed-info-list">
+                                <li><i class="fa fa-map-marker-alt"></i> <span>New York University</span></li>
+                                <li><i class="fa fa-phone"></i> <span>(+1) 917 864 7779</span></li>
+                                <li><i class="far fa-envelope"></i> <span><a href="mailto:name@email.com">aj2529@nyu.edu</a></span></li>
+                            </ul>
+                        </aside>
+                    <a href="#" class="ritekhed-back-top"><i class="fa fa-angle-up"></i></a>
+                </div>
+            </div>
+            <!-- Footer Widget -->
+
+            <!-- CopyRight -->
+            <div class="ritekhed-copyright">
+                <div class="container">
+                    <div class="row">
+                        <aside class="col-md-6"><p>© 2019, All Right Reserved - by <a href="index.html">Foot365</a></p></aside>
+                        <aside class="col-md-6">
+                            <ul class="ritekhed-copyright-link">
+                                <li><a href="#">Terms And Condition</a></li>
+                                <li><a href="#">Privacy Policy</a></li>
+                            </ul>
+                        </aside>
+                    </div>
+                </div>
+            </div>
+            <!-- CopyRight -->
+
+        </footer>
+        <!-- Footer -->
+    </div>
+    <!-- jQuery -->
+    <script src="script/jquery.js"></script>
+    <script src="script/popper.min.js"></script>
+    <script src="script/bootstrap.min.js"></script>
+    <script src="script/slick.slider.min.js"></script>
+    <script src="script/fancybox.min.js"></script>
+    <script src="script/isotope.min.js"></script>
+    <script src="script/smartmenus.min.js"></script>
+    <script src="script/progressbar.js"></script>
+    <script src="script/counter.js"></script>
+    <script src="script/jquery.countdown.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js"></script>
+    <script src="script/functions.js"></script>
+</body>
+
+</html>

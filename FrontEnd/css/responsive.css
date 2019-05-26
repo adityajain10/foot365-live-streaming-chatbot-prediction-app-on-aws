@@ -1,0 +1,122 @@
+/*	Media 768Px Start */
+@media (min-width: 768px) and (max-width: 1024px) {
+	#main-nav { position: absolute; right: 0px; top: 100%; min-width: 230px; }
+	.ritekhed-menu-link { display: inline-block; }
+	#main-nav { display: none; } .sm-blue { background: #ffffff; }
+	.ritekhed-main-header:before, .ritekhed-main-header:after { display: none; }
+	.ritekhed-header-one .ritekhed-right-head { margin: 30px 0px 15px 0px; position: relative; }
+	.ritekhed-banner-caption { margin-top: -50px; }
+	.ritekhed-banner-caption p,.ritekhed-banner-caption a { display: none; }
+	.ritekhed-banner-caption h1 { font-size: 40px; }
+
+	/* Main Grid */
+	.ritekhed-main-content .col-md-4,.ritekhed-main-content .col-md-3 { float: none; display: inline-block; vertical-align: top; margin-right: -4px; width: 50%; flex: 0 0 50%;
+    max-width: 50%; }
+	.ritekhed-main-content .col-md-7,.ritekhed-main-content .col-md-5,.ritekhed-main-content .col-md-6 { width: 100%; float: left; flex: 0 0 100%; max-width: 100%; }
+	.col-md-12,.ritekhed-main-content .col-md-8,.ritekhed-main-content .col-md-9 { float: left; width: 100%; max-width: 100%; flex: auto; }
+
+	/* Content */
+	.ritekhed-testimonial-slider .slick-arrow,.ritekhed-partner-slider .slick-arrow { display: none !important; }
+	.ritekhed-teams-match,.ritekhed-buy-ticket { width: 100%; }
+	.ritekhed-buy-ticket { padding-bottom: 30px; padding-top: 20px; }
+	.ritekhed-first-team:before,.ritekhed-second-team:before { display: none; }
+	.ritekhed-fixture-list { margin-bottom: 0px; }
+	.ritekhed-error-wrap form input[type="text"] { width: 100%; margin-bottom: 20px; }
+	.login-register-full .ritekhed-login-box { margin-bottom: 30px; }
+	.ritekhed-player-thumb-text { width: 100%; margin-left: 0px; }
+
+	/* Footer */
+	.ritekhed-footer-widget .widget { float: none; display: inline-block; margin-right: -4px; vertical-align: top; max-width: 50%; flex: auto; }
+	
+}
+
+/* Media 420Px Start */
+@media (max-width: 767px) {
+	#main-nav { position: absolute; right: 0px; top: 100%; min-width: 230px; }
+	.ritekhed-menu-link { display: inline-block; }
+	#main-nav { display: none; } .sm-blue { background: #ffffff; }
+	.ritekhed-main-header:before, .ritekhed-main-header:after { display: none; }
+	.ritekhed-header-one .ritekhed-right-head { margin: 30px 0px 15px 0px; position: relative; }
+	.ritekhed-banner-caption { display: none; }
+	.ritekhed-top-strip { text-align: center; }
+	.ritekhed-user-section > li,.ritekhed-top-strip-social,.ritekhed-user-section { float: none; display: inline-block; }
+
+
+	/* Main Grid */
+	.ritekhed-main-content .col-md-4,.ritekhed-main-content .col-md-3 { float: none; display: inline-block; vertical-align: top; margin-right: -4px; width: 50%; flex: 0 0 50%; max-width: 50%; }
+	.ritekhed-main-content .col-md-7,.ritekhed-main-content .col-md-5,.ritekhed-main-content .col-md-6 { width: 100%; float: left; flex: 0 0 100%; max-width: 100%; }
+	.col-md-12,.ritekhed-main-content .col-md-8,.ritekhed-main-content .col-md-9 { float: left; width: 100%; max-width: 100%; flex: auto; }
+
+	/* Content */
+	.ritekhed-testimonial-slider .slick-arrow,.ritekhed-partner-slider .slick-arrow { display: none !important; }
+	.loginmodal .modal-dialog { width: 100%; }
+	.ritekhed-login-close { right: 15px; }
+	.ritekhed-match-fixture .player-stats-text span { line-height: 1.5; }
+	.ritekhed-match-fixture .ritekhed-client-detail tr > td figure ~ .player-stats-text { margin: 0px 0 0 0px; float: left; width: 100%; }
+	.ritekhed-fixture-list ul { width: 800px; overflow: scroll; }
+	.ritekhed-fixture-list { overflow: scroll; }
+	.ritekhed-classic-heading h2:before { display: none; }
+	.ritekhed-teams-match,.ritekhed-buy-ticket { width: 100%; }
+	.ritekhed-buy-ticket { padding-bottom: 30px; padding-top: 20px; }
+	.ritekhed-first-team:before,.ritekhed-second-team:before { display: none; }
+	.ritekhed-fixture-list { margin-bottom: 0px; }
+	.ritekhed-second-team,.ritekhed-fixture-list ul li { float: left; width: 100%; }
+	.ritekhed-match-view { display: none; }
+	.ritekhed-second-team { width: 50% !important; }
+	.ritekhed-fixer-result { padding: 60px 0px 0px 0px; }
+	.ritekhed-prenxt-post ul li { width: 100%; margin-bottom: 10px; }
+	#ritekhed-comments ul ul.children { padding-left: 0px; }
+	#ritekhed-comments ul li figure ~ .text { margin-left: 0px; float: left; width: 100%; }
+	.ritekhed-contact-form form ul li { width: 100%; }
+	.ritekhed-contact-form form p input[type="text"],.ritekhed-contact-form form p textarea { width: 100%; }
+	.ritekhed-error-wrap form input[type="text"] { width: 100%; margin-bottom: 20px; }
+	.ritekhed-error-wrap form { width: 100%; }
+	.ritekhed-error-wrap { padding-top: 20px; padding-bottom: 50px; }
+	.login-register-full .ritekhed-login-box { margin-bottom: 30px; }
+	.ritekhed-player-list figure ~ .ritekhed-player-list-text { margin-left: 0px; float: left; width: 100%; }
+	.ritekhed-player-list figure { width: 100%; }
+	.ritekhed-player-list figure a i { top: auto; bottom: -22px; right: 50%; }
+	.ritekhed-player-thumb-text { width: 100%; margin-left: 0px; }
+	.ritekhed-shop-summery { width: 100%; }
+
+	
+	/* Footer */
+	.ritekhed-footer-widget .widget { float: none; display: inline-block; margin-right: -4px; vertical-align: top; max-width: 50%; flex: auto; }
+	.ritekhed-copyright { text-align: center; }
+	.ritekhed-copyright p,.ritekhed-copyright-link { float: none; display: inline-block; }
+	.ritekhed-copyright p { padding-bottom: 0px; }
+	.ritekhed-copyright-link li { margin-top: 12px; }
+	.ritekhed-copyright-link li:last-child { padding-right: 20px; }
+
+}
+
+/* Media 300Px Start */
+@media (max-width: 540px) {
+	/* Main Grid */
+	.ritekhed-main-content .col-md-4,.ritekhed-main-content .col-md-3 { margin-right: 0px; width: 100%; flex: 0 0 100%; max-width: 100%; }
+	.ritekhed-footer-widget .widget { margin-right: 0px; flex: 0 0 100%; max-width: 100%; }
+	.ritekhed-cart-box { width: 100%; }
+
+	/* Content */
+	.ritekhed-match-fixture { overflow: scroll; }
+	.ritekhed-latest-result ul li { width: 100%; float: left; margin-bottom: 10px; }
+	.ritekhed-team-matches li { float: left; width: 100%; }
+	.ritekhed-copyright-link li { padding: 0px 10px; }
+	.ritekhed-fixer-result ul li { width: 100%; float: left; margin-bottom: 20px; }
+	.ritekhed-detail-thumb figcaption { position: static; float: left; width: 100%; }
+	.ritekhed-countdown .countdown-section { width: 100%; }
+	.ritekhed-countdown .countdown-section:before { display: none; }
+	.login-network li { width: 100%; }
+	.ritekhed-search-result input[type="submit"] { padding-left: 16px; padding-right: 16px; }
+	.ritekhed-search-result input[type="text"] { font-size: 14px; }
+	.ritekhed-player-info li { width: 100%; }
+
+	/* Footer */
+	.ritekhed-footer-widget .widget { float: none; display: inline-block; margin-right: 0px; vertical-align: top; max-width: 100%; flex: auto; }
+
+}
+
+/* Media 940Px Start */
+@media screen and (min-width: 991px) and (max-width: 1054px) {
+	
+}

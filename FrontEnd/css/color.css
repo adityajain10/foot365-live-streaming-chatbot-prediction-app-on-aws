@@ -1,0 +1,40 @@
+/* ThemeColor One */
+
+.ritekhed-color,.ritekhed-colorhover:hover,.ritekhed-fixture-table-slider .slick-arrow,.ritekhed-testimonial-slider .slick-arrow:hover,
+.ritekhed-partner-slider .slick-arrow:hover i,.ritekhed-breadcrumb li {
+    color: #ffdc11;
+}
+
+.ritekhed-bgcolor,.ritekhed-bgcolorhover:hover,.ritekhed-fixture-table-slider .slick-arrow:hover,.ritekhed-fancy-title h2:before,.ritekhed-fancy-title h2:after,
+.footer-widget-title h2:before,.widget_gallery ul li a:before,.ritekhed-bloglarge-text time,.ritekhed-blog-large figure a i,.ritekhed-widget-heading h2:before,
+.ticket-buy-btn:hover,.ritekhed-forword-btn,.ritekhed-player-list figure a i,.ritekhed-article-text time,.ritekhed-banner-btn:hover {
+    background-color: #ffdc11;
+}
+
+.ritekhed-border-color,.ritekhed-border-colorhover:hover,.sm-blue ul,.sm-blue ul ul,.ritekhed-classic-heading h2,.ritekhed-banner-btn:hover {
+    border-color: #ffdc11;
+}
+.ritekhed-main-header:before,.ritekhed-main-header:after {
+	border-bottom-color: #ffdc11;
+}
+.bar-container .bar {
+	background-color: #ffdc11 !important;
+}
+
+/* ThemeColor Two */
+.ritekhed-color-two,.ritekhed-colorhover-two:hover,.ritekhed-fixture-table-slider .slick-arrow:hover,li:hover .ritekhed-counter-wrap i,.ritekhed-partner-slider .slick-arrow i,
+.ritekhed-banner-btn {
+	color: #27282a;
+}
+
+.ritekhed-bgcolor-two,.ritekhed-bgcolorhover-two:hover,.sm-blue ul,.sm-blue ul ul,.ritekhed-fixture-table-slider .slick-arrow,.ritekhed-classic-heading h2,.ritekhed-blog-large figure a:before,
+.ritekhed-search-result input[type="submit"]:hover {
+	background-color: #27282a;
+}
+
+.ritekhed-border-color-two,.ritekhed-border-colorhover-two:hover,.ritekhed-banner-btn {
+	border-color: #27282a;
+}
+.sm-blue ul:before {
+	border-bottom-color: #27282a;
+}
