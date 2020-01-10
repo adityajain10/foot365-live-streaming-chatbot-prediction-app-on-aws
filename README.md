@@ -31,26 +31,26 @@ We have also incorporated features such as predictions for the final week of the
 
 ## 4.	Technology Stack
 ### Front end:
-•	HTML
-•	CSS
-•	Bootstrap
-•	JQuery
+•	HTML<br>
+•	CSS<br>
+•	Bootstrap<br>
+•	JQuery<br>
 
 ### Back end:
 •	Python<br>
 •	Node<br>
 
 ### AWS Services used:
-•	Cognito & IAM for Authentication, Security Management,
-•	S3 for Static Web Hosting, Data Storage,
-•	API Gateway for routing and configuring business logic
-•	Lambda for incorporating modular logic functionality
-•	SQS and SNS for queuing and notification services
-•	Sagemaker for match predictions using ML
-•	EC2 for Kafka (with Apache Avro) for live score update
-•	DynamoDB and ElasticSearch for database & indexing.
-•	Lex for Chatbot application to provide recommendations
-•	Cloudwatch for monitoring, trigger and analytics
+•	Cognito & IAM for Authentication, Security Management<br>
+•	S3 for Static Web Hosting, Data Storage<br>
+•	API Gateway for routing and configuring business logic<br>
+•	Lambda for incorporating modular logic functionality<br>
+•	SQS and SNS for queuing and notification services<br>
+•	Sagemaker for match predictions using ML<br>
+•	EC2 for Kafka (with Apache Avro) for live score update<br>
+•	DynamoDB and ElasticSearch for database & indexing<br>
+•	Lex for Chatbot application to provide recommendations<br>
+•	Cloudwatch for monitoring, trigger and analytics<br>
 
 #### AWS Managed Kafka
 Amazon Managed Streaming for Kafka (Amazon MSK), a fully managed service that made it easy for build and run Foot365 app that used Apache Kafka to process streaming data. Amazon MSK provided us the control-plane operations and lets you use Apache Kafka data-plane operations, such as those for producing and consuming live score data.
@@ -82,12 +82,11 @@ We used Amazon SageMaker to build, train, and deploy machine learning models qui
 
 
 ## 5.	External API integrations
-•	FOOTBALL API 
-•	Google Places API
+•	FOOTBALL API <br>
+•	Google Places API<br>
 
 ## 6.	Implementation
-Here, we discuss how each module in the architecture of FitBook works, and their
-integration with each other.
+
 
 ### Frontend
 The frontend was implemented using JavaScript, jQuery and Adobe PhoneGap, an app
@@ -103,12 +102,12 @@ The frontend is hosted on Amazon S3 and integrated with Cognito for authenticati
 Our application follows a PULL, PUSH and GET model with regards to various modules. Below are details about the APIs that were hit from the frontend.
 
 ### APIs
-Get Fixtures
-Get Live Scores
-Get Score Predictions
-Get recommendations of bars on where a match is being screened
-Gets results of previous matches.
-Get standings of Teams in EPL
+•	Get Fixtures<br>
+•	Get Live Scores<br>
+•	Get Score Predictions<br>
+•	Get recommendations of bars on where a match is being screened<br>
+•	Gets results of previous matches<br>
+•	Get standings of Teams in EPL<br>
 
  
 
