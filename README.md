@@ -37,8 +37,8 @@ We have also incorporated features such as predictions for the final week of the
 •	JQuery
 
 ### Back end:
-•	Python
-•	Node
+•	Python<br>
+•	Node<br>
 
 ### AWS Services used:
 •	Cognito & IAM for Authentication, Security Management,
@@ -118,17 +118,17 @@ The application will call these APIs only when required to.
 
 ## 7.	Challenges Faced
 
-•	Security and Session Handling for multiple pages
-•	Simulating live stream logic for Kafka
-•	Machine Learning based complexities
-•	Integration with cloud and merging back-end and front-end logic.
-•	Data Scraping to usable formats within AWS
-•	Adhering to AWS dependencies
-•	Sticking to 100$ limit with Student Plan.
+•	Security and Session Handling for multiple pages<br>
+•	Simulating live stream logic for Kafka<br>
+•	Machine Learning based complexities<br>
+•	Integration with cloud and merging back-end and front-end logic<br>
+•	Data Scraping to usable formats within AWS<br>
+•	Adhering to AWS dependencies<br>
+•	Sticking to 100$ limit with Student Plan<br>
 
 ## 8.	Future Work
-•	Expanding the domain to other Football leagues across the world.
-•	Incorporating fantasy football games for the userbase with Machine Learning techniques.
-•	Including Live Commentary Feature for the ongoing games.
-•	Incorporating FIFA World Cup matches
-•	Exporting our services to games such as EA and PES.
+•	Expanding the domain to other Football leagues across the world.<br>
+•	Incorporating fantasy football games for the userbase with Machine Learning techniques.<br>
+•	Including Live Commentary Feature for the ongoing games.<br>
+•	Incorporating FIFA World Cup matches.<br>
+•	Exporting our services to games such as EA and PES.<br>
