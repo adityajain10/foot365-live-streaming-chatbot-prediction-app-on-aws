@@ -1,5 +1,5 @@
 # Foot365
-An AWS-based web-application for Football enthusaists, to get round-theclock information about matches, scores, results and screenings near them.
+An AWS-based web-application for Football enthusaists, to get round-theclock information about matches, live scores, match predictions, fixtures, results and live match screenings near them.
 
 ## Problem Statement
 We aim to serve the football community by providing round-the-clock services regarding match fixtures, standings, schedules and screenings available to them.
