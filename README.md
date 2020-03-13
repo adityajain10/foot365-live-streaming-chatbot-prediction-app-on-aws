@@ -1,6 +1,23 @@
 # Foot365
 An AWS-based web-application for Football enthusaists, to get round-theclock information about matches, live scores, match predictions, fixtures, results and live match screenings near them.
 
+## Table of content
+
+- [Problem Statement](#Problem Statement)
+- [Overview](#Overview)
+- [Assumptions](#Assumptions)
+- [Architecture](#Architecture)
+- [Technology Stack](#Technology Stack)
+    - [Front end](#Front end)
+    - [Back end](#Back end)
+    - [AWS Services](#AWS Services)
+- [External API integrations](#External API integrations)
+- [Implementation](#Implementation)
+    - [Frontend](#Frontend)
+    - [Integration](#Integration)
+    - [APIs](#APIs)
+- [Future Work](#Future Work)
+
 ## Problem Statement
 We aim to serve the football community by providing round-the-clock services regarding match fixtures, standings, schedules and screenings available to them.
 
@@ -23,20 +40,20 @@ We have also incorporated features such as predictions for the final week of the
 *	During the demonstration, we have simulated already ended games and given data such that live scores can be displayed using this data.
 *	Our predictions for the final week of season assumes that all the matches played in the current season barring the last week are considered.
 
-## Architecture Diagram
+## Architecture
 
 ## Technology Stack
-### Front end:
+### Front end
 * HTML
 * CSS
 * Bootstrap
 * JQuery
 
-### Back end:
+### Back end
 *	Python
 *	Node
 
-### AWS Services used:
+### AWS Services
 * Cognito & IAM for Authentication, Security Management
 * S3 for Static Web Hosting, Data Storage
 * API Gateway for routing and configuring business logic
@@ -90,17 +107,6 @@ Our application follows a PULL, PUSH and GET model with regards to various modul
 * Get standings of Teams in EPL
 
 The application will call these APIs only when required to.
-
-
-## Challenges Faced
-
-* Security and Session Handling for multiple pages
-* Simulating live stream logic for Kafka
-* Machine Learning based complexities
-* Integration with cloud and merging back-end and front-end logic
-* Data Scraping to usable formats within AWS
-* Adhering to AWS dependencies
-* Sticking to 100$ limit with Student Plan
 
 ## Future Work
 * Expanding the domain to other Football leagues across the world.
