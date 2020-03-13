@@ -2,12 +2,8 @@
 # Foot365 <img src="https://github.com/adityajain10/Foot365-AWS-Kafka-Chatbot-Prediction-App/blob/master/Snapshots/logo.png" width="20%">
 An AWS-based web-application for Football enthusaists, to get round-theclock information about matches, live scores, match predictions, fixtures, results and live match screenings near them.<br>
 <img src="https://github.com/adityajain10/Foot365-AWS-Kafka-Chatbot-Prediction-App/blob/master/Snapshots/HomePage.png" width="100%">
-<video width="48%">
-    <source src="https://github.com/adityajain10/Foot365-AWS-Kafka-Chatbot-Prediction-App/blob/master/Snapshots/Foot365.mp4" type="video/mp4">
-</video>
 <img src="https://github.com/adityajain10/Foot365-AWS-Kafka-Chatbot-Prediction-App/blob/master/Snapshots/Predictions.png" width="48%">
 <img src="https://github.com/adityajain10/Foot365-AWS-Kafka-Chatbot-Prediction-App/blob/master/Snapshots/LiveScores.png" width="48%">
-<img src="https://github.com/adityajain10/Foot365-AWS-Kafka-Chatbot-Prediction-App/blob/master/Snapshots/ChatBot.png" width="48%">
 
 
 ## Table of content
@@ -51,6 +47,8 @@ We have also incorporated features such as predictions for the final week of the
 
 ## Architecture
 
+![](https://github.com/adityajain10/Foot365-AWS-Kafka-Chatbot-Prediction-App/tree/master/Snapshots/)
+
 ## Technology Stack
 ### Front end
 * HTML
@@ -77,11 +75,17 @@ We have also incorporated features such as predictions for the final week of the
 #### AWS Managed Kafka
 Amazon Managed Streaming for Kafka (Amazon MSK), a fully managed service that made it easy for build and run Foot365 app that used Apache Kafka to process streaming data. Amazon MSK provided us the control-plane operations and lets you use Apache Kafka data-plane operations, such as those for producing and consuming live score data.
 
+![](https://github.com/adityajain10/Foot365-AWS-Kafka-Chatbot-Prediction-App/tree/master/Snapshots/Kafka.png)
+
 #### Lex
 We used Amazon Lex for building conversational interfaces into Foot365 app using voice and text. Amazon Lex provided the advanced deep learning functionalities of automatic speech recognition (ASR) for converting speech to text, and natural language understanding (NLU) to recognize the intent of the text, to enabled us to build applications with highly engaging user experiences and lifelike conversational interactions further providing the fixtures, match results and recommendations of places, where the match is being screened to the user.
- 
+
+![](https://github.com/adityajain10/Foot365-AWS-Kafka-Chatbot-Prediction-App/tree/master/Snapshots/ChatBot.png)
+
 #### SNS
 We used Amazon Simple Notification Service (SNS) for a highly available, durable, secure, fully managed pub/sub messaging service that enabled us to decouple microservices, distributed systems, and serverless applications. Amazon SNS provided topics for high-throughput, push-based, many-to-many messaging. Using Amazon SNS topics, we could fan out messages to a large number of subscriber endpoints for parallel processing, including Amazon SQS queues, AWS Lambda functions, and HTTP/S webhooks and sending the match results, fixtures and recommendations to the user by integrating it with Lex.
+
+![](https://github.com/adityajain10/Foot365-AWS-Kafka-Chatbot-Prediction-App/tree/master/Snapshots/SNS.png)
 
 #### DynamoDB
 We used Amazon DynamoDB for a NoSQL database as it supports key-value and document data models, and enables developers to build modern, serverless applications that can start small and scale globally to support petabytes of data and tens of millions of read and write requests per second. We store the match results, stats and fixtures in the dynamo DB further connecting it with Elastic Search.
@@ -89,6 +93,7 @@ We used Amazon DynamoDB for a NoSQL database as it supports key-value and docume
 #### AWS SageMaker
 We used Amazon SageMaker to build, train, and deploy machine learning models quickly. Amazon SageMaker provided us a fully-managed service that covers the entire machine learning workflow to label and prepare your data, choose an algorithm, train the model, tune and optimize it for deployment, make predictions of probability of match draws and win, and take action.
 
+![](https://github.com/adityajain10/Foot365-AWS-Kafka-Chatbot-Prediction-App/tree/master/Snapshots/SageMaker.png)
  
 ## External API integrations
 * FOOTBALL API 
@@ -116,6 +121,8 @@ Our application follows a PULL, PUSH and GET model with regards to various modul
 * Get standings of Teams in EPL
 
 The application will call these APIs only when required to.
+
+![](https://github.com/adityajain10/Foot365-AWS-Kafka-Chatbot-Prediction-App/tree/master/Snapshots/)
 
 ## Future Work
 * Expanding the domain to other Football leagues across the world.
