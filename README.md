@@ -47,7 +47,7 @@ We have also incorporated features such as predictions for the final week of the
 
 ## Architecture
 
-![Architecture](https://github.com/adityajain10/Foot365-AWS-Kafka-Chatbot-Prediction-App/tree/master/Snapshots/)
+![Architecture](https://github.com/adityajain10/Foot365-AWS-Kafka-Chatbot-Prediction-App/tree/master/Snapshots/architecture.jpg)
 
 ## Technology Stack
 ### Front end
