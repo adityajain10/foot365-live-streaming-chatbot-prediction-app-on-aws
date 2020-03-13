@@ -122,7 +122,7 @@ Our application follows a PULL, PUSH and GET model with regards to various modul
 
 The application will call these APIs only when required to.
 
-![Service](https://github.com/adityajain10/Foot365-AWS-Kafka-Chatbot-Prediction-App/blob/master/Snapshots/APIs.png)
+![Service](Snapshots/APIs.png)
 
 ## Future Work
 * Expanding the domain to other Football leagues across the world.
