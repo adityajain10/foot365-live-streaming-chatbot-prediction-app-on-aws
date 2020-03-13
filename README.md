@@ -1,10 +1,10 @@
 
-# Foot365 <img src="https://github.com/adityajain10/Foot365-AWS-Kafka-Chatbot-Prediction-App/blob/master/Snapshots/logo.png" width="30%">
+# Foot365 <img src="https://github.com/adityajain10/Foot365-AWS-Kafka-Chatbot-Prediction-App/blob/master/Snapshots/logo.png" width="20%">
 An AWS-based web-application for Football enthusaists, to get round-theclock information about matches, live scores, match predictions, fixtures, results and live match screenings near them.<br>
 <img src="https://github.com/adityajain10/Foot365-AWS-Kafka-Chatbot-Prediction-App/blob/master/Snapshots/HomePage.png" width="100%">
 <img src="https://github.com/adityajain10/Foot365-AWS-Kafka-Chatbot-Prediction-App/blob/master/Snapshots/Predictions.png" width="48%">
 <img src="https://github.com/adityajain10/Foot365-AWS-Kafka-Chatbot-Prediction-App/blob/master/Snapshots/LiveScores.png" width="48%">
-<img src="https://github.com/adityajain10/Foot365-AWS-Kafka-Chatbot-Prediction-App/blob/master/Snapshots/ChatBot.png.png" width="48%">
+<img src="https://github.com/adityajain10/Foot365-AWS-Kafka-Chatbot-Prediction-App/blob/master/Snapshots/ChatBot.png" width="48%">
 
 
 ## Table of content
