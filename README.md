@@ -3,20 +3,20 @@ An AWS-based web-application for Football enthusaists, to get round-theclock inf
 
 ## Table of content
 
-- [Problem Statement](#Problem Statement)
+- [Problem Statement](#Problem-Statement)
 - [Overview](#Overview)
 - [Assumptions](#Assumptions)
 - [Architecture](#Architecture)
-- [Technology Stack](#Technology Stack)
-    - [Front end](#Front end)
-    - [Back end](#Back end)
-    - [AWS Services](#AWS Services)
-- [External API integrations](#External API integrations)
+- [Technology Stack](#Technology-Stack)
+    - [Front end](#Front-end)
+    - [Back end](#Back-end)
+    - [AWS Services](#AWS-Services)
+- [External API integrations](#External-API-integrations)
 - [Implementation](#Implementation)
     - [Frontend](#Frontend)
     - [Integration](#Integration)
     - [APIs](#APIs)
-- [Future Work](#Future Work)
+- [Future Work](#Future-Work)
 
 ## Problem Statement
 We aim to serve the football community by providing round-the-clock services regarding match fixtures, standings, schedules and screenings available to them.
