@@ -1,4 +1,4 @@
-# Foot365
+# Foot365 ![Logo](https://github.com/adityajain10/Foot365-AWS-Kafka-Chatbot-Prediction-App/blob/master/Snapshots/logo.png)
 An AWS-based web-application for Football enthusaists, to get round-theclock information about matches, live scores, match predictions, fixtures, results and live match screenings near them.
 
 ## Table of content
