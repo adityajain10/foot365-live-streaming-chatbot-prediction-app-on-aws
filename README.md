@@ -93,7 +93,8 @@ We used Amazon DynamoDB for a NoSQL database as it supports key-value and docume
 #### AWS SageMaker
 We used Amazon SageMaker to build, train, and deploy machine learning models quickly. Amazon SageMaker provided us a fully-managed service that covers the entire machine learning workflow to label and prepare your data, choose an algorithm, train the model, tune and optimize it for deployment, make predictions of probability of match draws and win, and take action.
 
-<img src="https://github.com/adityajain10/Foot365-AWS-Kafka-Chatbot-Prediction-App/tree/master/Snapshots/SageMaker.png">
+![Service](https://github.com/adityajain10/Foot365-AWS-Kafka-Chatbot-Prediction-App/blob/master/Snapshots/SageMaker.png)
+<img src="https://github.com/adityajain10/Foot365-AWS-Kafka-Chatbot-Prediction-App/blob/master/Snapshots/SageMaker.png">
  
 ## External API integrations
 * FOOTBALL API 
