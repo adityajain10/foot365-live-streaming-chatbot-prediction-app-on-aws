@@ -12,7 +12,7 @@
  * express or implied. See the License for the specific language governing
  * permissions and limitations under the License.
  */
- 
+
 var apiGateway = apiGateway || {};
 apiGateway.core = apiGateway.core || {};
 
@@ -32,7 +32,7 @@ apiGateway.core.utils = {
             params = {};
         }
         for (var i = 0; i < keys.length; i++) {
-            if(!apiGateway.core.utils.contains(ignore, keys[i])) {
+            if (!apiGateway.core.utils.contains(ignore, keys[i])) {
                 apiGateway.core.utils.assertDefined(params[keys[i]], keys[i]);
             }
         }
@@ -41,14 +41,16 @@ apiGateway.core.utils = {
         if (params === undefined) {
             return {};
         }
-        var object = { };
+        var object = {};
         for (var i = 0; i < keys.length; i++) {
             object[keys[i]] = params[keys[i]];
         }
         return object;
     },
-    contains: function(a, obj) {
-        if(a === undefined) { return false;}
+    contains: function (a, obj) {
+        if (a === undefined) {
+            return false;
+        }
         var i = a.length;
         while (i--) {
             if (a[i] === obj) {

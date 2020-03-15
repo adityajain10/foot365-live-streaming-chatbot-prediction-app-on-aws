@@ -1,334 +1,333 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="UTF-8">
-<link rel="stylesheet" href="css/bootstrap.css">
-<link rel="stylesheet" href="css/fontawesome-all.css">
-<link rel="stylesheet" href="css/slick-slider.css">
-<link rel="stylesheet" href="css/fancybox.css">
-<link rel="stylesheet" href="css/smartmenus.css">
-<link rel="stylesheet" href="style.css">
-<link rel="stylesheet" href="css/color.css">
-<link rel="stylesheet" href="css/responsive.css">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-<script src="script/jquery.js"></script>
-<script src="script/popper.min.js"></script>
-<script src="script/bootstrap.min.js"></script>
-<script src="script/slick.slider.min.js"></script>
-<script src="script/fancybox.min.js"></script>
-<script src="script/isotope.min.js"></script>
-<script src="script/smartmenus.min.js"></script>
-<script src="script/progressbar.js"></script>
-<script src="script/counter.js"></script>
-<script src="script/jquery.countdown.min.js"></script>
-<script src="script/functions.js"></script>
-<title>Sample Page</title>
+    <meta charset="UTF-8">
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/fontawesome-all.css" rel="stylesheet">
+    <link href="css/slick-slider.css" rel="stylesheet">
+    <link href="css/fancybox.css" rel="stylesheet">
+    <link href="css/smartmenus.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    <link href="css/color.css" rel="stylesheet">
+    <link href="css/responsive.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="script/jquery.js"></script>
+    <script src="script/popper.min.js"></script>
+    <script src="script/bootstrap.min.js"></script>
+    <script src="script/slick.slider.min.js"></script>
+    <script src="script/fancybox.min.js"></script>
+    <script src="script/isotope.min.js"></script>
+    <script src="script/smartmenus.min.js"></script>
+    <script src="script/progressbar.js"></script>
+    <script src="script/counter.js"></script>
+    <script src="script/jquery.countdown.min.js"></script>
+    <script src="script/functions.js"></script>
+    <title>Sample Page</title>
 
-<script>
-var settings = {
-  "async": true,
-  "crossDomain": true,
-  "url": "https://c6nha7eeyb.execute-api.us-east-1.amazonaws.com/STG/standings",
-  "method": "GET"
-}
-var settings2 = {
-  "async": true,
-  "crossDomain": true,
-  "url": "https://c6nha7eeyb.execute-api.us-east-1.amazonaws.com/STG/fixtures",
-  "method": "GET"
-}
+    <script>
+        var settings = {
+            "async": true,
+            "crossDomain": true,
+            "url": "https://c6nha7eeyb.execute-api.us-east-1.amazonaws.com/STG/standings",
+            "method": "GET"
+        }
+        var settings2 = {
+            "async": true,
+            "crossDomain": true,
+            "url": "https://c6nha7eeyb.execute-api.us-east-1.amazonaws.com/STG/fixtures",
+            "method": "GET"
+        }
 
-var settings3 = {
-  "async": true,
-  "crossDomain": true,
-  "url": "https://c6nha7eeyb.execute-api.us-east-1.amazonaws.com/STG/results",
-  "method": "GET"
-}
-
-
-$.ajax(settings).done(function (response) {
-  var myJSON = JSON.stringify(response);
-  console
-  var a = myJSON.split("{").join("  ");
-  console.log("a:",a);
-  var b = a.split("}").join("<br><br> ");
-  var c = b.split(",").join("");
-  var a1 = c.split("overall_league_PTS").join("<b>Points</b>");
-  var a2 = a1.split("overall_league_position").join("<b>Position</b>");
-  var a3 = a2.split("overall_league_W").join("<b>W</b>");
-  var a4 = a3.split("overall_league_L").join("<b>L</b>");
-  var a5 = a4.split("overall_league_L").join("<b>L</b>");
-  var a6 = a5.split("overall_league_GA").join("<b>GA</b>");
-  var a66 = a6.split("overall_league_payed").join("<b>Played</b>");
-  var a7 = a66.split("overall_league_GF").join("<b>GF</b>");
-  var a8 = a7.split("overall_league_D").join("<b>D</b>");
-  var a9 = a8.split("team_name").join("<br><b>Team</b>");
-  var ab = a9.split("overall_league_D").join("Draw");
-  var ac = ab.split(",").join("");
-  var ad = ac.split("\"").join("&nbsp");
-  var ae = ad.split("[").join("");
-  var af = ae.split("]").join("");
+        var settings3 = {
+            "async": true,
+            "crossDomain": true,
+            "url": "https://c6nha7eeyb.execute-api.us-east-1.amazonaws.com/STG/results",
+            "method": "GET"
+        }
 
 
-  //var content = response.wind.speed;
-  $("#windSpeed").append(af);
+        $.ajax(settings).done(function (response) {
+            var myJSON = JSON.stringify(response);
+            console
+            var a = myJSON.split("{").join("  ");
+            console.log("a:", a);
+            var b = a.split("}").join("<br><br> ");
+            var c = b.split(",").join("");
+            var a1 = c.split("overall_league_PTS").join("<b>Points</b>");
+            var a2 = a1.split("overall_league_position").join("<b>Position</b>");
+            var a3 = a2.split("overall_league_W").join("<b>W</b>");
+            var a4 = a3.split("overall_league_L").join("<b>L</b>");
+            var a5 = a4.split("overall_league_L").join("<b>L</b>");
+            var a6 = a5.split("overall_league_GA").join("<b>GA</b>");
+            var a66 = a6.split("overall_league_payed").join("<b>Played</b>");
+            var a7 = a66.split("overall_league_GF").join("<b>GF</b>");
+            var a8 = a7.split("overall_league_D").join("<b>D</b>");
+            var a9 = a8.split("team_name").join("<br><b>Team</b>");
+            var ab = a9.split("overall_league_D").join("Draw");
+            var ac = ab.split(",").join("");
+            var ad = ac.split("\"").join("&nbsp");
+            var ae = ad.split("[").join("");
+            var af = ae.split("]").join("");
 
 
-
-});
-
-$.ajax(settings2).done(function (response2) {
-  var myJSON = JSON.stringify(response2);
-
-  var a = myJSON.split("{").join("  ");
-  console.log("a:",a);
-  var b = a.split("}").join("<br><br> ");
-  var c = b.split(",").join("");
-  var a1 = c.split("match_date").join("<b>Date</b>");
-  var a2 = a1.split("match_id").join("<b>ID:</b>");
-  var a3 = a2.split("overall_league_W").join("<b>W</b>");
-  var a4 = a3.split("overall_league_L").join("<b>L</b>");
-  var a5 = a4.split("overall_league_L").join("<b>L</b>");
-  var a6 = a5.split("overall_league_GA").join("<b>GA</b>");
-  var a66 = a6.split("overall_league_payed").join("<b>Played</b>");
-  var a7 = a66.split("match_away").join("");
-  var a8 = a7.split("match_home").join("");
-  var a9 = a8.split("team_name").join("<b>Team</b>");
-  var ab = a9.split("overall_league_D").join("Draw");
-  var ac = ab.split(",").join("");
-  var ad = ac.split("\"").join("&nbsp");
-  var ae = ad.split("[").join("");
-  var af = ae.split("]").join("");
+            //var content = response.wind.speed;
+            $("#windSpeed").append(af);
 
 
-  //var content = response.wind.speed;
-  $("#windSpeed2").append(af);
+        });
+
+        $.ajax(settings2).done(function (response2) {
+            var myJSON = JSON.stringify(response2);
+
+            var a = myJSON.split("{").join("  ");
+            console.log("a:", a);
+            var b = a.split("}").join("<br><br> ");
+            var c = b.split(",").join("");
+            var a1 = c.split("match_date").join("<b>Date</b>");
+            var a2 = a1.split("match_id").join("<b>ID:</b>");
+            var a3 = a2.split("overall_league_W").join("<b>W</b>");
+            var a4 = a3.split("overall_league_L").join("<b>L</b>");
+            var a5 = a4.split("overall_league_L").join("<b>L</b>");
+            var a6 = a5.split("overall_league_GA").join("<b>GA</b>");
+            var a66 = a6.split("overall_league_payed").join("<b>Played</b>");
+            var a7 = a66.split("match_away").join("");
+            var a8 = a7.split("match_home").join("");
+            var a9 = a8.split("team_name").join("<b>Team</b>");
+            var ab = a9.split("overall_league_D").join("Draw");
+            var ac = ab.split(",").join("");
+            var ad = ac.split("\"").join("&nbsp");
+            var ae = ad.split("[").join("");
+            var af = ae.split("]").join("");
 
 
-
-});
-
-$.ajax(settings3).done(function (response3) {
-  var myJSON = JSON.stringify(response3);
-  console
-  var a = myJSON.split("{").join("  ");
-  console.log("a:",a);
-  var b = a.split("}").join("<br><br> ");
-  var c = b.split(",").join("");
-  var a1 = c.split("match_date").join("<b>Date</b>");
-  var a2 = a1.split("match_id").join("<b>ID</b>");
-  var a3 = a2.split("match_hometeam_score").join("");
-  var a4 = a3.split("match_awayteam_name").join("");
-  var a5 = a4.split("match_time").join("<b>Time</b>");
-  var a6 = a5.split("league_name").join("");
-  var a66 = a6.split("country_name").join("");
-  var a7 = a66.split("match_awayteam_score").join("");
-  var a8 = a7.split("match_hometeam_name").join("");
-  var a9 = a8.split(":").join("");
-  var ab = a9.split("overall_league_D").join("Draw");
-  var ac = ab.split(",").join("");
-  var ad = ac.split("\"").join("&nbsp");
-  var ae = ad.split("[").join("");
-  var af = ae.split("]").join("");
+            //var content = response.wind.speed;
+            $("#windSpeed2").append(af);
 
 
-  //var content = response.wind.speed;
-  $("#windSpeed3").append(af);
+        });
+
+        $.ajax(settings3).done(function (response3) {
+            var myJSON = JSON.stringify(response3);
+            console
+            var a = myJSON.split("{").join("  ");
+            console.log("a:", a);
+            var b = a.split("}").join("<br><br> ");
+            var c = b.split(",").join("");
+            var a1 = c.split("match_date").join("<b>Date</b>");
+            var a2 = a1.split("match_id").join("<b>ID</b>");
+            var a3 = a2.split("match_hometeam_score").join("");
+            var a4 = a3.split("match_awayteam_name").join("");
+            var a5 = a4.split("match_time").join("<b>Time</b>");
+            var a6 = a5.split("league_name").join("");
+            var a66 = a6.split("country_name").join("");
+            var a7 = a66.split("match_awayteam_score").join("");
+            var a8 = a7.split("match_hometeam_name").join("");
+            var a9 = a8.split(":").join("");
+            var ab = a9.split("overall_league_D").join("Draw");
+            var ac = ab.split(",").join("");
+            var ad = ac.split("\"").join("&nbsp");
+            var ae = ad.split("[").join("");
+            var af = ae.split("]").join("");
 
 
+            //var content = response.wind.speed;
+            $("#windSpeed3").append(af);
 
-});
-</script>
+
+        });
+    </script>
 </head>
 <body class="home">
-    <div class="ritekhed-wrapper">
-      <!-- Header -->
-      <div id="ritekhed-header" class="ritekhed-header-one">
+<div class="ritekhed-wrapper">
+    <!-- Header -->
+    <div class="ritekhed-header-one" id="ritekhed-header">
 
-          <!-- Top Strip -->
-          <div class="ritekhed-top-strip ritekhed-bgcolor-two">
-              <div class="container">
-                  <div class="row">
-                      <div class="col-md-12">
+        <!-- Top Strip -->
+        <div class="ritekhed-top-strip ritekhed-bgcolor-two">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
 
-                          <ul class="ritekhed-user-section">
-                              <li><i class="fa fa-sign-in-alt"></i> <a href="https://footthreesixtyfive.auth.us-east-1.amazoncognito.com/logout?
-client_id=6b7unqhjcn1cbr85o1fo6bq69o&logout_uri=https://s3.amazonaws.com/foot365/foot365/signout.html" data-toggle="modal" data-target="#signupModal">Sign Out</a></li>
-                          </ul>
-                      </div>
-                  </div>
-              </div>
-          </div>
-          <!-- Top Strip -->
+                        <ul class="ritekhed-user-section">
+                            <li><i class="fa fa-sign-in-alt"></i> <a data-target="#signupModal"
+                                                                     data-toggle="modal" href="https://footthreesixtyfive.auth.us-east-1.amazoncognito.com/logout?
+client_id=6b7unqhjcn1cbr85o1fo6bq69o&logout_uri=https://s3.amazonaws.com/foot365/foot365/signout.html">Sign
+                                Out</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Top Strip -->
 
-          <!-- Main Header -->
-          <div class="ritekhed-main-header ritekhed-border-color" >
-              <div class="container">
-                  <div class="row">
-                      <div class="col-md-12">
+        <!-- Main Header -->
+        <div class="ritekhed-main-header ritekhed-border-color">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
 
-                          <div class="ritekhed-right-head">
+                        <div class="ritekhed-right-head">
 
-                              <nav id="main-nav">
-                                  <ul id="main-menu" class="sm sm-blue">
+                            <nav id="main-nav">
+                                <ul class="sm sm-blue" id="main-menu">
                                     <li><a href="index.html">Home</a></li>
-                                    <li  class="active"><a href="fixture.html">Leaderboard and Fixtures</a></li>
+                                    <li class="active"><a href="fixture.html">Leaderboard and Fixtures</a></li>
                                     <li><a href="predict.html">foot365 Predictions</a></li>
                                     <li class="active"><a href="live.html">GET LIVE SCORES @ Foot365!</a></li>
 
-                                  </ul>
-                              </nav>
-                          </div>
-                      </div>
-                  </div>
-              </div>
-          </div>
-          <!-- Main Header -->
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Main Header -->
 
-      </div>
-      <!-- Header -->
-      <!-- Content -->
-      <div class="ritekhed-main-content">
+    </div>
+    <!-- Header -->
+    <!-- Content -->
+    <div class="ritekhed-main-content">
 
-          <!-- Main Section -->
-          <div class="ritekhed-main-section ritekhed-fixture-table-slider-full">
-              <div class="container-fluid">
-                  <div class="row">
-
-
-                  </div>
-              </div>
-          </div>
-
-          <!-- Main Section -->
-          <div class="ritekhed-main-section">
-              <div class="container">
-                  <div class="row">
+        <!-- Main Section -->
+        <div class="ritekhed-main-section ritekhed-fixture-table-slider-full">
+            <div class="container-fluid">
+                <div class="row">
 
 
+                </div>
+            </div>
+        </div>
 
-                      <!-- Result -->
-                      <div class="col-md-6">
-                          <div class="ritekhed-classic-heading">
-                              <h2>Leaderboard</h2>
-                          </div>
-                          <div class="ritekhed-latest-result-wrap">
-                              <div class="ritekhed-latest-result">
-                                  <ul>
-
-                                      <li>
-
-                                          <div id="windSpeed"></div>
-                                      </li>
-
-                                  </ul>
-                              </div>
-                          </div>
-                      </div>
-                      <!-- Result -->
-                      <!-- Result -->
-                      <div class="col-md-6">
-                          <div class="ritekhed-classic-heading">
-                              <h2>Fixtures</h2>
-                          </div>
-                          <div class="ritekhed-latest-result-wrap">
-                              <div class="ritekhed-latest-result">
-                                  <ul>
-
-                                      <li>
-
-                                          <div id="windSpeed2"></div>
-                                      </li>
-
-                                  </ul>
-                              </div>
-                          </div>
-                      </div>
-                      <!-- Result -->
-                      <div class="col-md-6">
-                          <div class="ritekhed-classic-heading">
-                              <h2>Results</h2>
-                          </div>
-                          <div class="ritekhed-latest-result-wrap">
-                              <div class="ritekhed-latest-result">
-                                  <ul>
-
-                                      <li>
-
-                                          <div id="windSpeed3"></div>
-                                      </li>
-
-                                  </ul>
-                              </div>
-                          </div>
-                      </div>
-                      <!-- Result -->
+        <!-- Main Section -->
+        <div class="ritekhed-main-section">
+            <div class="container">
+                <div class="row">
 
 
-                  </div>
-              </div>
-          </div>
-          <!-- Main Section -->
+                    <!-- Result -->
+                    <div class="col-md-6">
+                        <div class="ritekhed-classic-heading">
+                            <h2>Leaderboard</h2>
+                        </div>
+                        <div class="ritekhed-latest-result-wrap">
+                            <div class="ritekhed-latest-result">
+                                <ul>
+
+                                    <li>
+
+                                        <div id="windSpeed"></div>
+                                    </li>
+
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Result -->
+                    <!-- Result -->
+                    <div class="col-md-6">
+                        <div class="ritekhed-classic-heading">
+                            <h2>Fixtures</h2>
+                        </div>
+                        <div class="ritekhed-latest-result-wrap">
+                            <div class="ritekhed-latest-result">
+                                <ul>
+
+                                    <li>
+
+                                        <div id="windSpeed2"></div>
+                                    </li>
+
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Result -->
+                    <div class="col-md-6">
+                        <div class="ritekhed-classic-heading">
+                            <h2>Results</h2>
+                        </div>
+                        <div class="ritekhed-latest-result-wrap">
+                            <div class="ritekhed-latest-result">
+                                <ul>
+
+                                    <li>
+
+                                        <div id="windSpeed3"></div>
+                                    </li>
+
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Result -->
 
 
-
-          <!-- Main Section -->
-          <div class="ritekhed-main-section ritekhed-player-grid-full">
-              <div class="container">
-                  <div class="row">
-                      <div id="windSpeed"></div>
-
-                  </div>
-              </div>
-          </div>
-          <!-- Main Section -->
+                </div>
+            </div>
+        </div>
+        <!-- Main Section -->
 
 
+        <!-- Main Section -->
+        <div class="ritekhed-main-section ritekhed-player-grid-full">
+            <div class="container">
+                <div class="row">
+                    <div id="windSpeed"></div>
 
-      </div>
-      <!-- Content -->
+                </div>
+            </div>
+        </div>
+        <!-- Main Section -->
 
-      <!-- Footer -->
-      <footer id="ritekhed-footer" class="ritekhed-footer-one">
-          <!-- Footer Widget -->
-          <div class="ritekhed-footer-widget">
-              <div class="container">
-                  <div class="row">
-                      <!-- Widget Footer About -->
-                      <aside class="widget col-md-4 widget_footer_about">
-                          <ul class="ritekhed-social-network">
-                              <li><a href="https://www.facebook.com/foot365" class="ritekhed-colorhover fab fa-facebook"></a></li>
-                          </ul>
-                          <ul class="ritekhed-info-list">
-                              <li><i class="fa fa-map-marker-alt"></i> <span>New York University</span></li>
-                              <li><i class="fa fa-phone"></i> <span>(+1) 917 864 7779</span></li>
-                              <li><i class="far fa-envelope"></i> <span><a href="mailto:name@email.com">aj2529@nyu.edu</a></span></li>
-                          </ul>
-                      </aside>
-                  <a href="#" class="ritekhed-back-top"><i class="fa fa-angle-up"></i></a>
-              </div>
-          </div>
-          <!-- Footer Widget -->
 
-          <!-- CopyRight -->
-          <div class="ritekhed-copyright">
-              <div class="container">
-                  <div class="row">
-                      <aside class="col-md-6"><p>© 2019, All Right Reserved - by <a href="index.html">Foot365</a></p></aside>
-                      <aside class="col-md-6">
-                          <ul class="ritekhed-copyright-link">
-                              <li><a href="#">Terms And Condition</a></li>
-                              <li><a href="#">Privacy Policy</a></li>
-                          </ul>
-                      </aside>
-                  </div>
-              </div>
-          </div>
-          <!-- CopyRight -->
+    </div>
+    <!-- Content -->
 
-      </footer>
-      <!-- Footer -->
-  </div>
+    <!-- Footer -->
+    <footer class="ritekhed-footer-one" id="ritekhed-footer">
+        <!-- Footer Widget -->
+        <div class="ritekhed-footer-widget">
+            <div class="container">
+                <div class="row">
+                    <!-- Widget Footer About -->
+                    <aside class="widget col-md-4 widget_footer_about">
+                        <ul class="ritekhed-social-network">
+                            <li><a class="ritekhed-colorhover fab fa-facebook"
+                                   href="https://www.facebook.com/foot365"></a></li>
+                        </ul>
+                        <ul class="ritekhed-info-list">
+                            <li><i class="fa fa-map-marker-alt"></i> <span>New York University</span></li>
+                            <li><i class="fa fa-phone"></i> <span>(+1) 917 864 7779</span></li>
+                            <li><i class="far fa-envelope"></i> <span><a href="mailto:name@email.com">aj2529@nyu.edu</a></span>
+                            </li>
+                        </ul>
+                    </aside>
+                    <a class="ritekhed-back-top" href="#"><i class="fa fa-angle-up"></i></a>
+                </div>
+            </div>
+            <!-- Footer Widget -->
+
+            <!-- CopyRight -->
+            <div class="ritekhed-copyright">
+                <div class="container">
+                    <div class="row">
+                        <aside class="col-md-6"><p>© 2019, All Right Reserved - by <a href="index.html">Foot365</a></p>
+                        </aside>
+                        <aside class="col-md-6">
+                            <ul class="ritekhed-copyright-link">
+                                <li><a href="#">Terms And Condition</a></li>
+                                <li><a href="#">Privacy Policy</a></li>
+                            </ul>
+                        </aside>
+                    </div>
+                </div>
+            </div>
+            <!-- CopyRight -->
+
+    </footer>
+    <!-- Footer -->
+</div>
 
 
 </body>

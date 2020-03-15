@@ -40,7 +40,7 @@ code.google.com/p/crypto-js/wiki/License
             // Convert
             var base64Chars = [];
             for (var i = 0; i < sigBytes; i += 3) {
-                var byte1 = (words[i >>> 2]       >>> (24 - (i % 4) * 8))       & 0xff;
+                var byte1 = (words[i >>> 2] >>> (24 - (i % 4) * 8)) & 0xff;
                 var byte2 = (words[(i + 1) >>> 2] >>> (24 - ((i + 1) % 4) * 8)) & 0xff;
                 var byte3 = (words[(i + 2) >>> 2] >>> (24 - ((i + 2) % 4) * 8)) & 0xff;
 

@@ -12,13 +12,13 @@
  * express or implied. See the License for the specific language governing
  * permissions and limitations under the License.
  */
- 
+
 var apiGateway = apiGateway || {};
 apiGateway.core = apiGateway.core || {};
 
 apiGateway.core.apiGatewayClientFactory = {};
 apiGateway.core.apiGatewayClientFactory.newClient = function (simpleHttpClientConfig, sigV4ClientConfig) {
-    var apiGatewayClient = { };
+    var apiGatewayClient = {};
     //Spin up 2 httpClients, one for simple requests, one for SigV4
     var sigV4Client = apiGateway.core.sigV4ClientFactory.newClient(sigV4ClientConfig);
     var simpleHttpClient = apiGateway.core.simpleHttpClientFactory.newClient(simpleHttpClientConfig);

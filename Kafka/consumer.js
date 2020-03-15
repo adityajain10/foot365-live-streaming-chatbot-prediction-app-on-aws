@@ -9,28 +9,28 @@ var typeDescription = {
             symbols: ['H1', 'H2', 'H3', 'H4', 'H5', 'H6', 'H7', 'H8', 'H9', 'H0', 'Hundefined']
         }
     },
-    {
-        name: 'GoalsAway',
-        type: {
+        {
             name: 'GoalsAway',
-            type: 'enum',
-            symbols: ['H1', 'H2', 'H3', 'H4', 'H5', 'H6', 'H7', 'H8', 'H9', 'H0', 'Hundefined']
-        }
-    },
-    {
-        name: "HomeTeam",
-        type: 'string'
-    },
-    {
-        name: "AwayTeam",
-        type: 'string'
-    }, {
-        name: 'matchid',
-        type: 'string'
-    }, {
-        name: 'timestamps',
-        type: 'double'
-    }]
+            type: {
+                name: 'GoalsAway',
+                type: 'enum',
+                symbols: ['H1', 'H2', 'H3', 'H4', 'H5', 'H6', 'H7', 'H8', 'H9', 'H0', 'Hundefined']
+            }
+        },
+        {
+            name: "HomeTeam",
+            type: 'string'
+        },
+        {
+            name: "AwayTeam",
+            type: 'string'
+        }, {
+            name: 'matchid',
+            type: 'string'
+        }, {
+            name: 'timestamps',
+            type: 'double'
+        }]
 };
 var exists;
 var avro = require('avsc');
@@ -67,9 +67,9 @@ consumer.on('message', function (message) {
     const params = {
         TableName: "livescore",
         Key:
-        {
-            "matchid": decodedMessage.matchid
-        }
+            {
+                "matchid": decodedMessage.matchid
+            }
     };
     exists = false
     const tem = ddb.get(params).promise()
@@ -106,9 +106,7 @@ consumer.on('message', function (message) {
                     console.log("UpdateItem succeeded:", JSON.stringify(data, null, 2));
                 }
             });
-        }
-
-        else {
+        } else {
             console.log("not exists");
             var row = {
                 GoalsHome: decodedMessage.GoalsHome,

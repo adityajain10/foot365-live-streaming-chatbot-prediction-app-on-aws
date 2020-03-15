@@ -12,7 +12,7 @@
  * express or implied. See the License for the specific language governing
  * permissions and limitations under the License.
  */
- 
+
 var apiGateway = apiGateway || {};
 apiGateway.core = apiGateway.core || {};
 
@@ -34,7 +34,7 @@ apiGateway.core.simpleHttpClientFactory.newClient = function (config) {
         return canonicalQueryString.substr(0, canonicalQueryString.length - 1);
     }
 
-    var simpleHttpClient = { };
+    var simpleHttpClient = {};
     simpleHttpClient.endpoint = apiGateway.core.utils.assertDefined(config.endpoint, 'endpoint');
 
     simpleHttpClient.makeRequest = function (request) {
@@ -50,12 +50,12 @@ apiGateway.core.simpleHttpClientFactory.newClient = function (config) {
         }
 
         //If the user has not specified an override for Content type the use default
-        if(headers['Content-Type'] === undefined) {
+        if (headers['Content-Type'] === undefined) {
             headers['Content-Type'] = config.defaultContentType;
         }
 
         //If the user has not specified an override for Accept type the use default
-        if(headers['Accept'] === undefined) {
+        if (headers['Accept'] === undefined) {
             headers['Accept'] = config.defaultAcceptType;
         }
 

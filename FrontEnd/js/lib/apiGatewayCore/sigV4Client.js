@@ -12,7 +12,7 @@
  * express or implied. See the License for the specific language governing
  * permissions and limitations under the License.
  */
- 
+
 var apiGateway = apiGateway || {};
 apiGateway.core = apiGateway.core || {};
 
@@ -75,10 +75,10 @@ apiGateway.core.sigV4ClientFactory.newClient = function (config) {
         return canonicalQueryString.substr(0, canonicalQueryString.length - 1);
     }
 
-    function fixedEncodeURIComponent (str) {
-      return encodeURIComponent(str).replace(/[!'()*]/g, function(c) {
-        return '%' + c.charCodeAt(0).toString(16).toUpperCase();
-      });
+    function fixedEncodeURIComponent(str) {
+        return encodeURIComponent(str).replace(/[!'()*]/g, function (c) {
+            return '%' + c.charCodeAt(0).toString(16).toUpperCase();
+        });
     }
 
     function buildCanonicalHeaders(headers) {
@@ -132,8 +132,8 @@ apiGateway.core.sigV4ClientFactory.newClient = function (config) {
         return AWS_SHA_256 + ' Credential=' + accessKey + '/' + credentialScope + ', SignedHeaders=' + buildCanonicalSignedHeaders(headers) + ', Signature=' + signature;
     }
 
-    var awsSigV4Client = { };
-    if(config.accessKey === undefined || config.secretKey === undefined) {
+    var awsSigV4Client = {};
+    if (config.accessKey === undefined || config.secretKey === undefined) {
         return awsSigV4Client;
     }
     awsSigV4Client.accessKey = apiGateway.core.utils.assertDefined(config.accessKey, 'accessKey');
@@ -156,24 +156,24 @@ apiGateway.core.sigV4ClientFactory.newClient = function (config) {
         }
 
         //If the user has not specified an override for Content type the use default
-        if(headers['Content-Type'] === undefined) {
+        if (headers['Content-Type'] === undefined) {
             headers['Content-Type'] = config.defaultContentType;
         }
 
         //If the user has not specified an override for Accept type the use default
-        if(headers['Accept'] === undefined) {
+        if (headers['Accept'] === undefined) {
             headers['Accept'] = config.defaultAcceptType;
         }
 
         var body = apiGateway.core.utils.copy(request.body);
         if (body === undefined || verb === 'GET') { // override request body and set to empty when signing GET requests
             body = '';
-        }  else {
+        } else {
             body = JSON.stringify(body);
         }
 
         //If there is no body remove the content-type header so it is not included in SigV4 calculation
-        if(body === '' || body === undefined || body === null) {
+        if (body === '' || body === undefined || body === null) {
             delete headers['Content-Type'];
         }
 
@@ -190,7 +190,7 @@ apiGateway.core.sigV4ClientFactory.newClient = function (config) {
         var signingKey = calculateSigningKey(awsSigV4Client.secretKey, datetime, awsSigV4Client.region, awsSigV4Client.serviceName);
         var signature = calculateSignature(signingKey, stringToSign);
         headers[AUTHORIZATION] = buildAuthorizationHeader(awsSigV4Client.accessKey, credentialScope, headers, signature);
-        if(awsSigV4Client.sessionToken !== undefined && awsSigV4Client.sessionToken !== '') {
+        if (awsSigV4Client.sessionToken !== undefined && awsSigV4Client.sessionToken !== '') {
             headers[X_AMZ_SECURITY_TOKEN] = awsSigV4Client.sessionToken;
         }
         delete headers[HOST];
@@ -202,7 +202,7 @@ apiGateway.core.sigV4ClientFactory.newClient = function (config) {
         }
 
         //Need to re-attach Content-Type if it is not specified at this point
-        if(headers['Content-Type'] === undefined) {
+        if (headers['Content-Type'] === undefined) {
             headers['Content-Type'] = config.defaultContentType;
         }
 
