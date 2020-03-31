@@ -274,7 +274,7 @@ def dining_suggestion_intent(intent_request):
 
 
 def restaurantApiCall(team, date, city, phone):
-    url = "https://maps.googleapis.com/maps/api/place/textsearch/json?query=Football%20match%20screening%20in+" + city + "&key=AIzaSyBPPIx4k5_Grm4NS1Rw0fvY61qq5dCfd9o"
+    url = "https://maps.googleapis.com/maps/api/place/textsearch/json?query=Football%20match%20screening%20in+" + city + "&key=INSERT_KEY_HERE"
     payload = ""
 
     response = requests.request("GET", url, data=payload)
